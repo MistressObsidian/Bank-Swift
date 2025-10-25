@@ -1,33 +1,20 @@
 {
-	"name": "banking-app",
-	"version": "1.0.0",
-	"private": true,
-	"type": "module",
-	"description": "Minimal backend for registration and login routes",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js",
-		"api": "node server.js",
-		"serve": "http-server -p 5173 -c-1 .",
-		"dev": "nodemon server.js",
-		"dev:all": "concurrently -n api,web -c blue,magenta \"nodemon server.js\" \"http-server -p 5173 -c-1 .\""
-	},
-	"dependencies": {
-		"bcrypt": "^6.0.0",
-		"bcryptjs": "^2.4.3",
-		"busboy": "^1.6.0",
-		"cors": "^2.8.5",
-		"dotenv": "^16.6.1",
-		"express": "^4.21.2",
-		"jsonwebtoken": "^9.0.2",
-		"morgan": "^1.10.1",
-		"node-fetch": "^3.3.2",
-		"nodemailer": "^6.9.13",
-		"pg": "^8.16.3"
-	},
-	"devDependencies": {
-		"concurrently": "^9.1.0",
-		"http-server": "^14.1.1",
-		"nodemon": "^3.1.0"
-	}
+  "name": "bank-swift",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^5.0.0"
+  }
 }
